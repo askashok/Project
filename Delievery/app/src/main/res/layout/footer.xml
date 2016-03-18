@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list">
+
+        <View
+            android:id="@+id/view_five"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Signature"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bill_list_view"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sendto" />
+
+        <com.github.gcacace.signaturepad.views.SignaturePad xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/signature_pad"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/sign"
+            android:layout_margin="10dp"
+            android:background="@drawable/cellborder"
+            app:penColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/payment_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signature_pad"
+            android:layout_margin="10dp"
+            android:text="Payment Mode"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_mode"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/payment_mode"
+            android:text="Cash" />
+
+        <Button
+            android:id="@+id/popup_ok"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/radioButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="#06A9BA"
+            android:text="Ok" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#cf9f99"
+        android:gravity="center_horizontal"
+        android:text="FOOTER" />
+
+</LinearLayout>

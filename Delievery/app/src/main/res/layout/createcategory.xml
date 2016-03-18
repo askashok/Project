@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listpressed">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_left_edit"
+                android:background="@color/menu_back">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btn_back"
+                        android:layout_width="@dimen/main_btn_menu_height"
+                        android:layout_height="@dimen/main_btn_menu_height"
+                        android:layout_margin="@dimen/main_top_image_mR"
+                        android:background="@drawable/back" />
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/main_title_height"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="25dp"
+                        android:text="Create Category"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_title_size"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_title"
+                android:layout_marginTop="20dp">
+
+
+                <commontestware.com.delieveryordermgmt.roundedimage.RoundedImageView
+                    android:id="@+id/photoimage"
+                    android:layout_width="@dimen/edit_txt_img1"
+                    android:layout_height="@dimen/edit_txt_img1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/create"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_pic"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/edt_foodname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/main_top_image_mR"
+                    android:background="@null"
+                    android:hint="Name"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="@dimen/main_top_image_mR"
+                    android:saveEnabled="true"
+                    android:singleLine="true"
+                    android:textAllCaps="true"
+                    android:textColor="#cfcfcf"
+                    android:textColorHighlight="#70797a"
+                    android:textColorHint="#70797a"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_size4"
+                    android:layout_below="@+id/passwordimg"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="#036c84" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_name"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:id="@+id/edt_typeoffood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/main_top_image_mR"
+                    android:background="@null"
+                    android:hint="Type of Food"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="@dimen/main_top_image_mR"
+                    android:singleLine="true"
+                    android:textAllCaps="true"
+                    android:textColor="#cfcfcf"
+                    android:textColorHint="#70797a"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_size4"
+                    android:layout_below="@+id/passwordimg"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="#036c84" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_type"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:id="@+id/edt_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/main_top_image_mR"
+                    android:background="@null"
+                    android:hint="Rate"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/main_top_image_mR"
+                    android:singleLine="true"
+                    android:textAllCaps="true"
+                    android:textColor="#cfcfcf"
+                    android:textColorHint="#70797a"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_size4"
+                    android:layout_below="@+id/passwordimg"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="#036c84" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relative_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_rate"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="@dimen/margin_size2"
+                    android:layout_height="@dimen/login_button_margin"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="80dp"
+                    android:background="@color/listdefault"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dummy"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_below="@+id/relative_btn">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/dummy"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7552428963008526/7313099897" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+

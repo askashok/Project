@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#15262d"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_layout">
+
+
+            <TextView
+                android:id="@+id/mytitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/profile_edittext_pL1"
+                android:text="SIGNUP"
+                android:textColor="#fff"
+                android:textSize="@dimen/activity_main"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+
+                android:id="@+id/relative_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative2">
+
+                <ImageView
+                    android:id="@+id/nameimg"
+                    android:layout_width="@dimen/margin_size"
+                    android:layout_height="@dimen/margin_size"
+                    android:layout_marginTop="@dimen/img1_txt1"
+                    android:background="@drawable/username"
+                    android:contentDescription="@string/usernameimgs" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/img1_txt1"
+                    android:layout_toRightOf="@+id/nameimg"
+                    android:background="@null"
+                    android:hint="Name"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="@dimen/margin_size"
+                    android:textColor="#cfcfcf"
+                    android:textColorHint="#70797a"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_size4"
+                    android:layout_below="@+id/nameimg"
+                    android:layout_marginTop="10dp"
+                    android:background="#c4c4c4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_name"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/emailimg"
+                    android:layout_width="@dimen/margin_size"
+                    android:layout_height="@dimen/margin_size"
+                    android:background="@drawable/email"
+                    android:contentDescription="@string/usernameimgs" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/emailimg"
+                    android:background="@null"
+                    android:hint="Email address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/margin_size"
+                    android:textColor="#cfcfcf"
+                    android:textColorHint="#70797a"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_size4"
+                    android:layout_below="@+id/emailimg"
+                    android:layout_marginTop="10dp"
+                    android:background="#c4c4c4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_email"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/passwordimg"
+                    android:layout_width="@dimen/margin_size"
+                    android:layout_height="@dimen/margin_size"
+                    android:background="@drawable/password"
+                    android:contentDescription="@string/usernameimgs" />
+
+                <EditText
+                    android:id="@+id/edt_passwrd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/passwordimg"
+                    android:background="@null"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/margin_size"
+                    android:textColor="#cfcfcf"
+                    android:textColorHint="#70797a"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_size4"
+                    android:layout_below="@+id/passwordimg"
+                    android:layout_marginTop="10dp"
+                    android:background="#c4c4c4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_conform_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_pass"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/conformpassimg"
+                    android:layout_width="@dimen/margin_size"
+                    android:layout_height="@dimen/margin_size"
+                    android:background="@drawable/password"
+                    android:contentDescription="@string/usernameimgs" />
+
+                <EditText
+                    android:id="@+id/edt_conirmpasswrd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/conformpassimg"
+                    android:background="@null"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/margin_size"
+                    android:textColor="#cfcfcf"
+                    android:textColorHint="#70797a"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_size4"
+                    android:layout_below="@+id/conformpassimg"
+                    android:layout_marginTop="10dp"
+                    android:background="#c4c4c4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mytitle"
+                android:layout_marginTop="20dp">
+
+                <commontestware.com.delieveryordermgmt.roundedimage.RoundedImageView
+                    android:id="@+id/photoimage"
+                    android:layout_width="@dimen/edit_txt_img1"
+                    android:layout_height="@dimen/edit_txt_img1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/profilepicture"
+                    android:paddingLeft="@dimen/main_top_image_mR"
+                    android:paddingRight="@dimen/margin_size"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_conform_pass"
+                android:layout_marginTop="40dp">
+
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="@dimen/margin_size2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/singup_marginleft"
+                    android:background="#005465"
+                    android:text="Signup"
+                    android:textAllCaps="false"
+                    android:textColor="#cfcfcf"
+                    android:textSize="@dimen/margin_size" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="@dimen/margin_size2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/singup_marginleft"
+                    android:layout_toRightOf="@+id/btn_signup"
+                    android:background="#005465"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#cfcfcf"
+                    android:textSize="@dimen/margin_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dummy"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_below="@+id/btn_relative">
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/dummy"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7552428963008526/7313099897" />
+    </LinearLayout>
+
+</RelativeLayout>

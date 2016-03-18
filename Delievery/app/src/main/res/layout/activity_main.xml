@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15262d"
+    tools:context=".view.MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+
+                <TextView
+                    android:id="@+id/mytitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/title"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/activity_main"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relative_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_title"
+                android:layout_marginTop="100dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/usernameimg"
+                    android:layout_width="@dimen/margin_size1"
+                    android:layout_height="@dimen/margin_size1"
+                    android:background="@drawable/username"
+                    android:contentDescription="@string/usernameimgs" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/usernameimg"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/margin_size"
+                    android:singleLine="true"
+                    android:textColor="#cfcfcf"
+                    android:textColorHint="#70797a"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/margin_size" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_size4"
+                    android:layout_below="@+id/usernameimg"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c4c4c4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_email"
+                android:layout_marginTop="20dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/passwordimg"
+                    android:layout_width="@dimen/margin_size1"
+                    android:layout_height="@dimen/margin_size1"
+                    android:background="@drawable/password"
+                    android:contentDescription="@string/passwordimgs" />
+
+                <EditText
+                    android:id="@+id/edt_pass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/passwordimg"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:hint="***********"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/margin_size"
+                    android:singleLine="true"
+                    android:textColor="#cfcfcf"
+                    android:textColorHint="#70797a"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/margin_size" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_size4"
+                    android:layout_below="@+id/passwordimg"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c4c4c4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative1"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/forgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Forgot Password ?"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_forgot"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/btn_signin"
+                    android:layout_width="@dimen/margin_size2"
+                    android:layout_height="wrap_content"
+                    android:background="@color/listdefault"
+                    android:text="SignIn"
+                    android:textAllCaps="false"
+                    android:textColor="#cfcfcf"
+                    android:textSize="@dimen/margin_size" />
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="@dimen/margin_size2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_size"
+                    android:layout_toRightOf="@+id/btn_signin"
+                    android:background="@color/listdefault"
+                    android:text="Signup"
+                    android:textAllCaps="false"
+                    android:textColor="#cfcfcf"
+                    android:textSize="@dimen/margin_size" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dummy"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_below="@+id/relative_btn">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/dummy"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7552428963008526/7313099897" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+

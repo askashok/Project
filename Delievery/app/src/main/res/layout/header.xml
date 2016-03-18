@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#cf9f99"
+        android:gravity="center_horizontal"
+        android:text="HEADER" />
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Generate Bill"
+            android:textColor="#06A9BA"
+            android:textSize="25dp" />
+
+
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="70dp"
+            android:background="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_one"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Food Items"
+            android:textColor="#06A9BA"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/view_one"
+            android:layout_centerHorizontal="true"
+            android:background="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_one"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/view_two"
+            android:text="Rupees"
+            android:textColor="#06A9BA"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/view_three"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/view_two"
+            android:background="#000" />
+
+
+        <!--
+                <View
+                    android:id="@+id/view_four"
+                    android:layout_width="1dp"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/view_three"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000" />-->
+
+
+    </RelativeLayout>
+
+</LinearLayout>

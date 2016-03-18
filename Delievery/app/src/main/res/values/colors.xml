@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#F50057</color>
+<color name="colorPrimaryDark">#C51162</color>
+<color name="textColorPrimary">#FFFFFF</color>
+<color name="windowBackground">#FFFFFF</color>
+<color name="navigationBarColor">#000000</color>
+<color name="colorAccent">#FF80AB</color>
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+    <color name="lime">#CDDC39</color>
+    <color name="purpile">#00FFFF</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="deeppurble">#673AB7</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="green_line">#ff13611a</color>
+    <color name="menu_back">#036c84</color>
+    <color name="orange">#FF9800</color>
+    <color name="text_head">#1e1e1e</color>
+    <color name="back">#eeeeee</color>
+    <color name="button_back">#42bd41</color>
+    <color name="listpressed">#15262d</color>
+    <color name="listdefault">#036c84</color>
+    <color name="hintcolor">#eceef1</color>
+    <color name="bg_color">#405c2b</color>
+    <color name="text_color">#829216</color>
+    <color name="text_fpwd">#d4ffae</color>
+    <color name="btnlogin">#74632b</color>
+    <color name="et_bg">#4c6834</color>
+    <color name="et_outline">#394925</color>
+    <color name="text_sign_up_login">#bba248</color>
+    <color name="text_color_menu_page">#efe8d8</color>
+    <color name="color_items_menu_page">#506d37</color>
+    <color name="click_color">#444f3b</color>
+    <color name="text_color_clicked">#d8dc15</color>
+    <color name="notes_bg">#c9c9c9</color>
+    <color name="notes_view">#137191</color>
+    <color name="negative_btn_color">#db1f1f</color>
+    <color name="static_text_color">#FFFFFF</color>
+
+</resources>

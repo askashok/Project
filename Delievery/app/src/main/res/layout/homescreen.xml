@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+
+    <!-- ///////////// DRAWER //////////////// -->
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_relative"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_title_height"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_title_height"
+                android:background="@color/menu_back"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/lineartoolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/btn_menu"
+                        android:layout_width="@dimen/main_btn_menu_height"
+                        android:layout_height="@dimen/main_btn_menu_height"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/menu" />
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/main_title_height"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Category"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_title_size"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:id="@+id/imgplus"
+                        android:layout_width="@dimen/margin_size25"
+                        android:layout_height="@dimen/margin_size25"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/add"
+                        android:visibility="visible" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/main_title_height" />
+
+        <!-- Listview to display slider menu -->
+        <RelativeLayout
+            android:id="@+id/relative_navigtion"
+            android:layout_width="@dimen/main_menu_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#036c84">
+
+
+            <!--<commontestware.com.delieveryordermgmt.roundedimage.RoundedImageView-->
+            <commontestware.com.delieveryordermgmt.roundedimage.RoundedImageView
+
+                android:id="@+id/circleimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_size"
+                android:background="@drawable/profilepicture"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/circletxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circleimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:focusable="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/list_slidermenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/circletxt"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size1"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/drawer_relative">
+
+    </RelativeLayout>
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/dummy"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7552428963008526/7313099897" />
+    </LinearLayout>-->
+
+</RelativeLayout>

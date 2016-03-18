@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="commontestware.com.delieveryordermgmt">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.Splash"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity
+             android:name=".view.Test"
+             android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             android:windowSoftInputMode="stateHidden">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>-->
+        <!--      <activity
+                  android:name=".view.LoadMore"
+                  android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+                  android:label="@string/app_name"
+
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden">
+                  <intent-filter>
+                      <action android:name="android.intent.action.MAIN" />
+
+                      <category android:name="android.intent.category.LAUNCHER" />
+                  </intent-filter>
+              </activity>-->
+        <activity
+            android:name=".view.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+            android:label="@string/app_name"
+
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.HomeScreen"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+            android:label="@string/app_name"
+            android:noHistory="false"
+            android:screenOrientation="userPortrait"
+            android:windowSoftInputMode="stateHidden|stateUnspecified|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.CreateCategory"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+
+            android:label="@string/app_name"
+            android:screenOrientation="userPortrait"
+            android:windowSoftInputMode="stateHidden|stateUnspecified|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.RegisterPage"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.Employee"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="userPortrait"
+            android:windowSoftInputMode="stateHidden|stateUnspecified|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".forgetpassword.ForgetPassword"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Utills.Popup"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Utills.Popupaway"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.BillScreen"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

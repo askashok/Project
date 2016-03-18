@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/listpressed">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/bill_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ListView
+                        android:id="@+id/list_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_category"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bill_layout"
+                    android:layout_marginTop="20dp">
+
+                    <Spinner
+                        android:id="@+id/edt_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/rect_edit_txt"
+                        android:cursorVisible="true"
+                        android:hint="Food Item"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/listdefault"
+                        android:textCursorDrawable="@android:color/holo_blue_light"
+                        android:textSize="18dp" />
+
+                    <!-- <Spinner
+                         android:id="@+id/edt_category"
+                         android:layout_width="match_parent"
+                         android:layout_height="50dp"
+                         android:layout_marginLeft="30dp"
+                         android:layout_marginRight="30dp"
+                         android:background="@drawable/rect_edit_txt"
+                         android:textColor="@color/listdefault"
+                         android:textCursorDrawable="@android:color/holo_blue_light" />
+            -->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_fooditem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_category"
+                    android:layout_marginTop="20dp">
+
+                    <Spinner
+                        android:id="@+id/edt_food_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/rect_edit_txt"
+                        android:cursorVisible="true"
+                        android:hint="Food Item"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/listdefault"
+                        android:textCursorDrawable="@android:color/holo_blue_light"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_fooditem"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/edt_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/rect_edit_txt"
+                        android:hint=" Quantity"
+                        android:inputType="number"
+                        android:paddingLeft="7dp"
+                        android:singleLine="true"
+                        android:textColor="#70797a"
+                        android:textColorHint="#70797a"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_quantity"
+                    android:layout_marginTop="20dp">
+
+                    <Spinner
+                        android:id="@+id/edt_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/rect_edit_txt"
+                        android:cursorVisible="true"
+                        android:hint=" Rate"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="#70797a"
+                        android:textColorHint="#70797a"
+                        android:textCursorDrawable="@android:color/holo_blue_light"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_rate"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/edt_totalamt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/rect_edit_txt"
+                        android:cursorVisible="true"
+                        android:hint=" Total Amount"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#70797a"
+                        android:textColorHint="#70797a"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+                <!--
+                            <RelativeLayout
+                                android:id="@+id/relative_tax"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/relative_number"
+                                android:layout_marginTop="20dp">
+
+                                <EditText
+                                    android:id="@+id/edt_tax"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_top"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:background="@drawable/rect_edit_txt"
+                                    android:cursorVisible="true"
+                                    android:hint=" Tax"
+                                    android:inputType="numberDecimal"
+                                    android:padding="10dp"
+                                    android:singleLine="true"
+                                    android:textColor="#70797a"
+                                    android:textColorHint="#70797a"
+                                    android:textSize="18dp" />
+                            </RelativeLayout>-->
+
+                <!--<RelativeLayout
+                    android:id="@+id/relative_gross"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_number"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/edt_gross_amt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_top"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/rect_edit_txt"
+                        android:hint=" Gross Total"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#70797a"
+                        android:textColorHint="#70797a"
+                        android:textSize="18dp" />
+                </RelativeLayout>-->
+
+                <RelativeLayout
+                    android:id="@+id/relative_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_number"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/img_plus"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/addto" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_ok_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_plus"
+                    android:layout_marginTop="40dp">
+
+                    <Button
+                        android:id="@+id/btn_ok"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/listdefault"
+                        android:text="Ok"
+                        android:textColor="#fcfcfc" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dummy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/relative_ok_btn">
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/scrollView"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/dummy"
+                    android:layout_marginTop="30dp">
+
+                    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="ca-app-pub-7552428963008526/7313099897" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

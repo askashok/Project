@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeimg"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:background="#1c343a"
+        android:padding="@dimen/homescreen_width1">
+
+        <commontestware.com.delieveryordermgmt.roundedimage.RoundedImageView
+            android:id="@+id/Gridimage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/roundedimg" />
+
+        <RelativeLayout
+            android:id="@+id/layout_foodname"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/Gridimage"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/itemname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/homescreen_height11"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="viji"
+                android:textColor="#06A9BA"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/layout_foodname"
+            android:layout_marginTop="5dp">
+
+
+            <TextView
+                android:id="@+id/categoryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/homescreen_height11"
+                android:singleLine="true"
+                android:text="viji"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/Gridimage"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/layout_foodname">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rupees" />
+
+            <TextView
+                android:id="@+id/categoryrate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:text="viji"
+                android:textColor="#34e838"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="@dimen/margin_size100"
+            android:layout_height="@dimen/margin_size100"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editn" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/margin_size100"
+            android:layout_height="@dimen/margin_size100"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/closen" />
+    </RelativeLayout>
+</RelativeLayout>

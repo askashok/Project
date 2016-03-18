@@ -1,0 +1,95 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_button_margin">35dp</dimen>
+    <dimen name="profile_edittext_pL">5dp</dimen>
+    <dimen name="main_title_height">50dp</dimen>
+    <dimen name="main_btn_menu_height">30dp</dimen>
+    <dimen name="main_menu_width">230dp</dimen>
+    <dimen name="main_line">3dp</dimen>
+    <dimen name="main_top_image_mR">10dp</dimen>
+    <dimen name="main_title_size">20sp</dimen>
+    <dimen name="main_aricle_hgt">110dp</dimen>
+    <dimen name="activity_main">20dp</dimen>
+    <dimen name="edit_txt_img">30dp</dimen>
+    <dimen name="edit_txt_margintop">37dp</dimen>
+    <dimen name="edit_txt_img1">100dp</dimen>
+    <dimen name="edit_txt_margintop1">110dp</dimen>
+    <dimen name="img31_txt3">120dp</dimen>
+    <dimen name="relative_margintop">270dp</dimen>
+    <dimen name="forgot_pass">75dp</dimen>
+    <dimen name="singup_marginleft">10dp</dimen>
+    <dimen name="img1_txt1">30dp</dimen>
+    <dimen name="img2_txt2">80dp</dimen>
+    <dimen name="img3_txt3">130dp</dimen>
+    <dimen name="profile_edittext_pL1">5dp</dimen>
+    <dimen name="img4_txt4">180dp</dimen>
+    <dimen name="edit_txt_img11">110dp</dimen>
+    <dimen name="img5_txt5">230dp</dimen>
+    <dimen name="img6_txt6">230dp</dimen>
+    <dimen name="img7_txt7">400dp</dimen>
+    <dimen name="marginleft_txt">90dp</dimen>
+    <dimen name="marginleft_plus">80dp</dimen>
+    <dimen name="margin_left_edit1">90dp</dimen>
+    <dimen name="forpass_margintop">350dp</dimen>
+    <dimen name="img9_txt9">210dp</dimen>
+    <dimen name="gender_marginlet">130dp</dimen>
+    <dimen name="ok_btn">80dp</dimen>
+    <dimen name="margin_left_category">60dp</dimen>
+    <dimen name="margin_left_edit">50dp</dimen>
+
+    <dimen name="margin_top">40dp</dimen>
+    <dimen name="margin_size">20dp</dimen>
+    <dimen name="margin_size1">30dp</dimen>
+    <dimen name="margin_size2">150dp</dimen>
+    <dimen name="margin_size3">15dp</dimen>
+    <dimen name="margin_size4">1dp</dimen>
+    <dimen name="margin_size5">23dp</dimen>
+    <dimen name="margin_size6">300dp</dimen>
+    <dimen name="margin_size7">70dp</dimen>
+    <dimen name="margin_size8">220dp</dimen>
+    <dimen name="margin_size9">18dp</dimen>
+    <dimen name="margin_size10">12dp</dimen>
+    <dimen name="margin_size11">2dp</dimen>
+    <dimen name="margin_size12">170dp</dimen>
+    <dimen name="margin_size13">225dp</dimen>
+    <dimen name="margin_size161">200dp</dimen>
+    <dimen name="margin_size14">320dp</dimen>
+    <dimen name="margin_size15">375dp</dimen>
+    <dimen name="margin_size16">200dp</dimen>
+    <dimen name="margin_size17">450dp</dimen>
+    <dimen name="margin_size18">120dp</dimen>
+    <dimen name="margin_size19">465dp</dimen>
+    <dimen name="margin_size20">420dp</dimen>
+    <dimen name="margin_size21">260dp</dimen>
+    <dimen name="margin_size22">5dp</dimen>
+    <dimen name="margin_size23">190dp</dimen>
+    <dimen name="margin_size24">170dp</dimen>
+    <dimen name="margin_size25">25dp</dimen>
+    <dimen name="margin_size26">13dp</dimen>
+    <dimen name="margin_size27">55dp</dimen>
+    <dimen name="margin_size28">280dp</dimen>
+    <dimen name="margin_size100">20dp</dimen>
+
+    <dimen name="homescreen_width">140dp</dimen>
+    <dimen name="homescreen_height">210dp</dimen>
+    <dimen name="homescreen_height1">90dp</dimen>
+    <dimen name="homescreen_height2">100dp</dimen>
+    <dimen name="homescreen_width1">5dp</dimen>
+    <dimen name="homescreen_height11">10dp</dimen>
+    <dimen name="homescreen_height111">15dp</dimen>
+    <dimen name="homescreen_height21">20dp</dimen>
+    <dimen name="homescreen_height211">25dp</dimen>
+    <dimen name="homescreen_height2112">7dp</dimen>
+
+    <dimen name="margin_top_layout">0dp</dimen>
+    <dimen name="margin">5dp</dimen>
+
+
+
+
+
+
+</resources>
+

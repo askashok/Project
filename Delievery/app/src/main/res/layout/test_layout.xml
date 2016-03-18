@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/relative_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bill_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Generate Bill"
+                android:textColor="#06A9BA"
+                android:textSize="25dp" />
+
+            <RelativeLayout
+                android:id="@+id/relat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_table"
+                android:layout_marginTop="70dp">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/column_one"
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_border_white"
+                            android:padding="10dp"
+                            android:text="Food Items"
+                            android:textColor="#06A9BA" />
+
+                        <TextView
+                            android:id="@+id/txt_particular_company_name"
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_border_white"
+                            android:padding="10dp"
+                            android:text="Rupees"
+                            android:textColor="#06A9BA" />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ListView
+                            android:id="@+id/bill_list_view"
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_border_white"
+                            android:padding="10dp">
+
+                        </ListView>
+
+
+                        <!--   <TextView
+                               android:id="@+id/column_serviceTax"
+                               style="@android:style/TextAppearance.Small"
+                               android:layout_width="100dp"
+                               android:layout_weight="1"
+                               android:background="@drawable/rectangle_border_white"
+                               android:padding="10dp"
+                               android:textColor="#06A9BA" />
+
+                           <TextView
+                               android:id="@+id/column_serviceTax_percentage"
+                               style="@android:style/TextAppearance.Small"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_weight="1"
+                               android:background="@drawable/rectangle_border_white"
+                               android:padding="10dp"
+                               android:textColor="#000" />-->
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/column_serviceTax1"
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_border_white"
+                            android:padding="10dp"
+                            android:text="Total Amount"
+                            android:textColor="#06A9BA" />
+
+                        <TextView
+                            android:id="@+id/column_serviceTax_percentage1"
+                            style="@android:style/TextAppearance.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_border_white"
+                            android:padding="10dp"
+                            android:textColor="#000" />
+
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relat">
+
+                <TextView
+                    android:id="@+id/sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Signature"
+                    android:textSize="20dp" />
+
+
+                <ImageView
+                    android:id="@+id/email"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/bill_list_view"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/sendto" />
+
+                <com.github.gcacace.signaturepad.views.SignaturePad xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/signature_pad"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/sign"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/cellborder"
+                    app:penColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/payment_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signature_pad"
+                    android:layout_margin="10dp"
+                    android:text="Payment Mode"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signature_pad"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/payment_mode"
+                    android:text="Cash" />
+
+                <Button
+                    android:id="@+id/popup_ok"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/radioButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="#06A9BA"
+                    android:text="Ok" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
